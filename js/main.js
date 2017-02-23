@@ -19,7 +19,7 @@ $(document).ready(function () {
             }
             var t1 = performance.now();
             // console.log("Call to doSomething took " + (t1 - t0) + " milliseconds.")
-            $('.jumbotron').append('<span>' +(t1-t0)+" - Insert Sort Time<br>");
+            $('.time').append('<span>' + (t1 - t0) + " - Insert Sort Time<br>");
             return A;
 
 
@@ -38,7 +38,7 @@ $(document).ready(function () {
                 }
             }
             var t1 = performance.now();
-            $('.jumbotron').append('<span>' +(t1-t0)+" - Bubble Sort Time<br>");
+            $('.time').append('<span>' + (t1 - t0) + " - Bubble Sort Time<br>");
             return A;
         }
 
@@ -55,7 +55,7 @@ $(document).ready(function () {
                 A[i] = t;
             }
             var t1 = performance.now();
-            $('.jumbotron').append('<span>' +(t1-t0)+" - Selection Sort Time<br>");
+            $('.time').append('<span>' + (t1 - t0) + " - Selection Sort Time<br>");
             return A;
         }
 
@@ -74,7 +74,7 @@ $(document).ready(function () {
                 i = (i == 2) ? 1 : Math.floor(i * 5 / 11);
             }
             var t1 = performance.now();
-            $('.jumbotron').append('<span>' +(t1-t0)+" - Shell Sort Time<br>");
+            $('.time').append('<span>' + (t1 - t0) + " - Shell Sort Time<br>");
             return A;
         }
 
@@ -90,7 +90,7 @@ $(document).ready(function () {
             }
             for (var i = 0; i < n; i++) B[Count[i]] = A[i];
             var t1 = performance.now();
-            $('.jumbotron').append('<span>' +(t1-t0)+" - Simple Counting Sort Time<br>");
+            $('.time').append('<span>' + (t1 - t0) + " - Simple Counting Sort Time<br>");
             return B;
         }
 
@@ -125,6 +125,7 @@ $(document).ready(function () {
 
         function mergeSort(A) {
             var t0 = performance.now();
+
             function merge_sort(a, low, high) {
                 if (low < high) {
                     var mid = Math.floor((low + high) / 2);
@@ -137,7 +138,7 @@ $(document).ready(function () {
             var n = A.length;
             merge_sort(A, 0, n - 1);
             var t1 = performance.now();
-            $('.jumbotron').append('<span>' +(t1-t0)+" - Merge Sort Time<br>");
+            $('.time').append('<span>' + (t1 - t0) + " - Merge Sort Time<br>");
             return A;
         }
 
@@ -152,17 +153,17 @@ $(document).ready(function () {
         }
 
         insertionSort(ul);
-        $("p").append(ul + ' << Insertion Sort <br>');
+        $(".sort").append(ul + ' << Insertion Sort <br>');
         bubbleSort(ul);
-        $("p").append(ul + ' << Bubble Sort <br>');
+        $(".sort").append(ul + ' << Bubble Sort <br>');
         selectionSort(ul);
-        $("p").append(ul + ' << Selection Sort <br>');
+        $(".sort").append(ul + ' << Selection Sort <br>');
         shellSort(ul);
-        $("p").append(ul + ' << Shell Sort <br>');
+        $(".sort").append(ul + ' << Shell Sort <br>');
         simpleCountingSort(ul);
-        $("p").append(ul + ' << Simple Counting Sort <br>');
+        $(".sort").append(ul + ' << Simple Counting Sort <br>');
         mergeSort(ul);
-        $("p").append(ul + ' << Merge Sort <br>');
+        $(".sort").append(ul + ' << Merge Sort <br>');
     });
 
 });
