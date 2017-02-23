@@ -17,6 +17,7 @@
     height: 100%;
     z-index: 1000;
 }
+
 #loader {
     display: block;
     position: relative;
@@ -66,27 +67,28 @@
 }
 
 @-webkit-keyframes spin {
-    0%   {
-        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
-        -ms-transform: rotate(0deg);  /* IE 9 */
-        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    0% {
+        -webkit-transform: rotate(0deg); /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg); /* IE 9 */
+        transform: rotate(0deg); /* Firefox 16+, IE 10+, Opera */
     }
     100% {
-        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
-        -ms-transform: rotate(360deg);  /* IE 9 */
-        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+        -webkit-transform: rotate(360deg); /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg); /* IE 9 */
+        transform: rotate(360deg); /* Firefox 16+, IE 10+, Opera */
     }
 }
+
 @keyframes spin {
-    0%   {
-        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
-        -ms-transform: rotate(0deg);  /* IE 9 */
-        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    0% {
+        -webkit-transform: rotate(0deg); /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg); /* IE 9 */
+        transform: rotate(0deg); /* Firefox 16+, IE 10+, Opera */
     }
     100% {
-        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
-        -ms-transform: rotate(360deg);  /* IE 9 */
-        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+        -webkit-transform: rotate(360deg); /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg); /* IE 9 */
+        transform: rotate(360deg); /* Firefox 16+, IE 10+, Opera */
     }
 }
 
@@ -97,9 +99,9 @@
     height: 100%;
     background: #ffffff;
     z-index: 1000;
-    -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: translateX(0);  /* IE 9 */
-    transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
+    -webkit-transform: translateX(0); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(0); /* IE 9 */
+    transform: translateX(0); /* Firefox 16+, IE 10+, Opera */
 }
 
 #loader-wrapper .loader-section.section-left {
@@ -112,18 +114,18 @@
 
 /* Loaded */
 .loaded #loader-wrapper .loader-section.section-left {
-    -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: translateX(-100%);  /* IE 9 */
-    transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+    -webkit-transform: translateX(-100%); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(-100%); /* IE 9 */
+    transform: translateX(-100%); /* Firefox 16+, IE 10+, Opera */
 
     -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 
 .loaded #loader-wrapper .loader-section.section-right {
-    -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: translateX(100%);  /* IE 9 */
-    transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+    -webkit-transform: translateX(100%); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(100%); /* IE 9 */
+    transform: translateX(100%); /* Firefox 16+, IE 10+, Opera */
 
     -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
@@ -134,12 +136,13 @@
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
+
 .loaded #loader-wrapper {
     visibility: hidden;
 
-    -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: translateY(-100%);  /* IE 9 */
-    transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+    -webkit-transform: translateY(-100%); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateY(-100%); /* IE 9 */
+    transform: translateY(-100%); /* Firefox 16+, IE 10+, Opera */
 
     -webkit-transition: all 0.3s 1s ease-out;
     transition: all 0.3s 1s ease-out;
@@ -149,8 +152,34 @@
 .no-js #loader-wrapper {
     display: none;
 }
+
 .no-js h1 {
     color: #222222;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-width: 1px 1px 1px 2px;
+    border-color: #777;
+    background-color: #aaa;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border-width: 1px 1px 1px 2px;
+    border-color: #555;
+    background-color: #777;
+}
+
+::-webkit-scrollbar-track {
+    border-width: 0;
+}
+
+::-webkit-scrollbar-track:hover {
+        border-left: solid 1px #aaa;
+        background-color: #eee;
 }
 
 html {
@@ -238,22 +267,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -339,9 +352,9 @@ textarea {
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -358,8 +371,9 @@ textarea {
     *:first-letter,
     *:first-line {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
+        color: #000 !important;
+        /* Black prints faster:
+                                          http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -381,7 +395,6 @@ textarea {
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
@@ -397,7 +410,6 @@ textarea {
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
