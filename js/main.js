@@ -1,5 +1,10 @@
 $(document).ready(function () {
 
+    setTimeout(function () {
+        $('body').addClass('loaded');
+        $('h1').css('color', '#222222');
+    }, 500);
+
     $('.form-group').on('click', 'button', function () {
         function insertionSort(unsortedList) {
             var len = unsortedList.length;
@@ -21,7 +26,7 @@ $(document).ready(function () {
             ul[i] = +ul[i];
         }
         insertionSort(ul);
-        $("p").append(ul+'<br>');
+        $("p").append(ul + '<br>');
         // $(document).createElement("p").append(ul);
     });
 

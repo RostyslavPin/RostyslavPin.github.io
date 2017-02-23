@@ -57,6 +57,13 @@
         </div>
     </div>
 </div>
+<div id="loader-wrapper">
+    <div id="loader"></div>
+
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+
+</div>
 <div class="jumbotron" style="background-color: white; padding-left: 100px;padding-right: 100px;margin:50px;">
     <h1>Hi!</h1>
     <img src="img/me.png" style="border-radius: 60%; width: calc(100vh - 633px); float: left; margin: 10px 13px 7px 0">
@@ -85,40 +92,6 @@
     $.material.init()
 </script>
 
-<style type="text/css">#hellopreloader > p {
-    display: none;
-}
-
-#hellopreloader_preload {
-    display: block;
-    position: fixed;
-    z-index: 99999;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    min-width: 1000px;
-    background: #049372 url(http://hello-site.ru//main/images/preloads/bars.svg) center center no-repeat;
-    background-size: 80px;
-}</style>
-<div id="hellopreloader">
-    <div id="hellopreloader_preload"></div>
-    <script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");
-    function fadeOutnojquery(el) {
-        el.style.opacity = 1;
-        var interhellopreloader = setInterval(function () {
-            el.style.opacity = el.style.opacity - 0.05;
-            if (el.style.opacity <= 0.05) {
-                clearInterval(interhellopreloader);
-                hellopreloader.style.display = "none";
-            }
-        }, 13);
-    }
-    window.onload = function () {
-        setTimeout(function () {
-            fadeOutnojquery(hellopreloader);
-        }, 700);
-    };</script>
 </div>
 </body>
 </html>
