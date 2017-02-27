@@ -178,10 +178,31 @@
 }
 
 ::-webkit-scrollbar-track:hover {
-        border-left: solid 1px #aaa;
-        background-color: #eee;
+    border-left: solid 1px #aaa;
+    background-color: #eee;
 }
-
+#me{
+    width: 200px;
+    height: 200px;
+    border:1px solid #ddd;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px #aaa;
+    margin: 5% auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    margin-left:110px;
+    margin-top:267px
+}
+#me:hover{
+    border-radius: 3px;
+}
+#about{
+    padding-left: 183px;
+}
 html {
     color: #222;
     font-size: 1em;
